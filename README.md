@@ -207,20 +207,18 @@ gestion-tickets/
 
 ---
 
-## Usuarios por Defecto
+## Usuarios de Ejemplo
 
-Después de importar `sql/production.sql`:
+Después de importar `sql/production.sql` se crean **cuentas de muestra**. Cámbialas por tus credenciales reales inmediatamente.
 
-| Nombre        | Email                 | Contraseña  | Rol   | Departamento |
-|---------------|-----------------------|-------------|-------|--------------|
-| Administrador | admin@rideco.mx       | admin123    | admin | TI           |
-| Armando TI    | auxsoporte@rideco.mx  | password123 | agent | TI           |
-| Luis TI       | sistemas@rideco.mx    | password123 | agent | TI           |
-| Axel Procesos | procesos@rideco.mx    | password123 | agent | Procesos     |
-| user 1        | user@rideco.mx        | password123 | user  | Compras      |
-| + 55 más      | (varios)              | password123 | user  | (varios)     |
+| Nombre            | Email                   | Contraseña | Rol   | Departamento |
+|-------------------|-------------------------|------------|-------|--------------|
+| Demo Admin        | admin@example.com       | password   | admin | TI           |
+| Demo Agent TI     | agent-ti@example.com    | password   | agent | TI           |
+| Demo Agent Procesos | agent-proc@example.com | password   | agent | Procesos     |
+| Demo User         | user@example.com        | password   | user  | Compras      |
 
- **IMPORTANTE:** Cambiar contraseñas después del deploy en producción
+**IMPORTANTE:** reemplaza estas cuentas y contraseñas en tu entorno real.
 
 ---
 
@@ -607,6 +605,12 @@ MIT License - Ver LICENSE para detalles
 - **GitHub Issues:** Reportar bugs
 - **Email:** ingenieroaxelgutierrez@gmail.com
 - **Documentación:** Ver CAMBIOS_TECNICOS.md
+
+---
+
+**Versión:** 1.0.0  
+**Última actualización:** 15 de enero de 2026  
+**Desarrollado por:** Axel Gutiérrez
 
 ---
 
