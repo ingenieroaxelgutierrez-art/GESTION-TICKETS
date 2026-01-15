@@ -1,0 +1,406 @@
+/* ====================================
+   LOGIN ANIMADO - ESTILOS
+   ==================================== */
+
+.animated-login-page {
+    min-height: 100vh;
+    /*background: linear-gradient(135deg, #cfeefa 0%, #1e8ef7 25%, #208ce4 50%, #aae9fc 100%);*/
+    background: url('https://pbs.twimg.com/media/ErUVzfWXIAM2WWp.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-content-wrapper {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* ====================================
+   SECCIÓN DE PERSONAJES
+   ==================================== */
+
+.characters-section {
+    flex: 1;
+    min-width: 350px;
+}
+
+#charactersSvg {
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.1));
+}
+
+.character {
+    transition: transform 0.3s ease;
+}
+
+.character .body {
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.character .eyes {
+    transition: display 0s;
+}
+
+.character .eyes-closed {
+    transition: display 0s;
+}
+
+.character .pupil {
+    transition: cx 0.1s ease, cy 0.1s ease;
+}
+
+.character .shine {
+    transition: cx 0.1s ease, cy 0.1s ease;
+}
+
+.character .mouth {
+    transition: all 0.3s ease;
+}
+
+.character .beak {
+    transition: transform 0.2s ease;
+    transform-origin: left center;
+}
+
+.character .eye-white {
+    transition: ry 0.3s ease;
+}
+
+/* Animaciones de parpadeo */
+@keyframes blink {
+    0%, 90%, 100% { opacity: 1; }
+    95% { opacity: 0; }
+}
+
+/* Animación de respiración */
+@keyframes breathe {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-2px); }
+}
+
+/* Animación de sacudida (error) */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Animación de salto (éxito) */
+@keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Animación de gotitas de sudor */
+@keyframes sweatDrop {
+    0% { 
+        transform: translateY(0);
+        opacity: 0.7;
+    }
+    100% { 
+        transform: translateY(8px);
+        opacity: 0;
+    }
+}
+
+/* ====================================
+   SECCIÓN DE FORMULARIO
+   ==================================== */
+
+.login-form-section {
+    flex: 1;
+    max-width: 450px;
+}
+
+.login-card-animated {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    padding: 2.5rem;
+    animation: slideInRight 0.6s ease-out;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.login-icon img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.login-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Alertas animadas */
+.animated-alert {
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    animation: slideDown 0.3s ease-out;
+}
+
+.alert-error {
+    background: #fee;
+    border: 1px solid #fcc;
+    color: #c33;
+}
+
+.alert-success {
+    background: #efe;
+    border: 1px solid #cfc;
+    color: #3c3;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ====================================
+   FORMULARIO
+   ==================================== */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group-animated {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group-animated label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group-animated input {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.form-group-animated input:focus {
+    border-color: #1a1a1a;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 3rem;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+    padding: 0.25rem;
+}
+
+.password-toggle:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.eye-icon {
+    display: inline-block;
+    filter: grayscale(1);
+    transition: filter 0.2s;
+}
+
+.password-toggle:hover .eye-icon {
+    filter: grayscale(0);
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.remember-me input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 0.95rem;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-login:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.btn-login:active {
+    transform: translateY(0);
+}
+
+.btn-login:disabled {
+    background: #999;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ====================================
+   ANIMACIONES DE ENTRADA
+   ==================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ====================================
+   RESPONSIVE
+   ==================================== */
+
+@media (max-width: 968px) {
+    .login-content-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .characters-section {
+        min-width: 100%;
+        max-width: 400px;
+    }
+    
+    .login-form-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .animated-login-page {
+        padding: 1rem;
+    }
+    
+    .login-card-animated {
+        padding: 1.5rem;
+    }
+    
+    .login-title {
+        font-size: 1.5rem;
+    }
+    
+    #charactersSvg {
+        height: 300px;
+    }
+}
+
+/* ====================================
+   LOADING STATE
+   ==================================== */
+
+.btn-login.loading {
+    position: relative;
+    color: transparent;
+}
+
+.btn-login.loading::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
