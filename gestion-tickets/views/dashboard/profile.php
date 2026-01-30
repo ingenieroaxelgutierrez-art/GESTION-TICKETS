@@ -1,5 +1,5 @@
 <?php
-$pageTitle = $pageTitle ?? 'Mi Perfil - RIDECO';
+$pageTitle = $pageTitle ?? 'Mi Perfil - TICKETS';
 include __DIR__ . '/../layouts/header.php';
 require_once __DIR__ . '/../../app/core/Auth.php';
 require_once __DIR__ . '/../../app/helpers/menu.php';
@@ -9,7 +9,7 @@ require_once __DIR__ . '/../../app/helpers/menu.php';
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
-            <img src="/gestion-tickets/assets/img/favicon_rideco.png" alt="RIDECO">
+            <img src="/gestion-tickets/assets/favicon_rideco.png" alt="ticket">
         </div>
         <?php echo renderMenu(); ?>
     </aside>
@@ -513,3 +513,4 @@ function showMessage(msg, type) {
 </script>
 
 <?php include __DIR__ . '/../layouts/footer.php'; ?>
+
