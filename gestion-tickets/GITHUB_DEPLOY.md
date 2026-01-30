@@ -87,7 +87,7 @@ git log --oneline
 
 ```bash
 # Agregar repositorio remoto
-git remote add origin https://github.com/USER/gestion-tickets.git
+git remote add origin https://github.com/ingenieroaxelgutierrez-art/GESTION-TICKETS.git
 
 # Renombrar rama a 'main'
 git branch -M main
@@ -105,8 +105,8 @@ git push -u origin main
 git remote -v
 
 # Debería mostrar:
-origin  https://github.com/USER/gestion-tickets.git (fetch)
-origin  https://github.com/USER/gestion-tickets.git (push)
+origin  https://github.com/ingenieroaxelgutierrez-art/GESTION-TICKETS.git (fetch)
+origin  https://github.com/ingenieroaxelgutierrez-art/GESTION-TICKETS.git (push)
 
 # Ver el historial
 git log --oneline
@@ -195,7 +195,7 @@ git reset --hard HEAD~1
 
 ```bash
 # En la carpeta donde quieras
-git clone https://github.com/USER/gestion-tickets.git
+git clone https://github.com/ingenieroaxelgutierrez-art/GESTION-TICKETS.git
 cd gestion-tickets
 
 # Configurar BD local (si es necesario)
@@ -280,7 +280,7 @@ git branch -a
 
 ```bash
 # Solución: Usar HTTPS en lugar de SSH
-git remote set-url origin https://github.com/USER/gestion-tickets.git
+git remote set-url origin https://github.com/ingenieroaxelgutierrez-art/GESTION-TICKETS.git
 
 # Verificar
 git remote -v
@@ -305,3 +305,4 @@ Ejecuta los comandos en orden y tendrás tu proyecto en GitHub.
 ---
 
 *Para más info: https://docs.github.com/en/get-started*
+
