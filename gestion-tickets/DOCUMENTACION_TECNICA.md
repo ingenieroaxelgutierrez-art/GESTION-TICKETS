@@ -63,7 +63,7 @@ public function __construct() {
 
 ###  Fase 3: Agentes Compartidos
 
-**Requisito:** Ambos TI (Armando y Luis) ven TODOS los tickets TI
+**Requisito:** Ambos TI (agente1 y agente2) ven TODOS los tickets TI
 
 **Implementación:**
 ```php
@@ -737,3 +737,4 @@ fetch('/gestion-tickets/tickets/6/status', {
 **Fin de la documentación técnica**
 
 Para preguntas específicas, revisar comentarios en el código o abrir un issue en GitHub.
+
