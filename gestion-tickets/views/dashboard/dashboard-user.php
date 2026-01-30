@@ -2,7 +2,7 @@
 /**
  * Dashboard personalizado para usuarios normales (role = 'user')
  */
-$pageTitle = 'Dashboard - RIDECO';
+$pageTitle = 'Dashboard - TICKETS';
 include __DIR__ . '/../layouts/header.php';
 require_once __DIR__ . '/../../app/core/Database.php';
 require_once __DIR__ . '/../../app/core/Auth.php';
@@ -157,4 +157,5 @@ $recentTickets = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 <?php include __DIR__ . '/../layouts/footer.php'; ?>
+
 
