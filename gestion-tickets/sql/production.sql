@@ -155,16 +155,8 @@ CREATE TABLE notifications (
 ) ENGINE=InnoDB;
 
 -- ============================================================================
--- 3. DATOS DE EJEMPLO (Opcional - comentar si no quieres datos de prueba)
+-- 3. DATOS DE EJEMPLO
 -- ============================================================================
-
--- Departamentos
-INSERT INTO departments (name, type) VALUES
-('Compras', 'emisor'),
-('TI', 'receptor'),
-('Almacén', 'emisor'),
-('Procesos', 'receptor'),
-('Contabilidad', 'emisor');
 
 -- Departamentos (con IDs específicos)
 INSERT INTO departments (id, name, type) VALUES
@@ -172,10 +164,10 @@ INSERT INTO departments (id, name, type) VALUES
 (2, 'Almacén', 'emisor'),
 (3, 'Ventas', 'emisor'),
 (6, 'Finanzas', 'emisor'),
-(7, 'Talento', 'emisor'),
+(7, 'RRHH', 'emisor'),
 (8, 'Marketing', 'emisor'),
 (9, 'Diseño', 'emisor'),
-(10, 'Immortale', 'emisor'),
+(10, '´Producción', 'emisor'),
 (11, 'Proyectos', 'emisor'),
 (12, 'Auditoria', 'emisor'),
 (4, 'TI', 'receptor'),
@@ -198,12 +190,12 @@ INSERT INTO categories (department_id, name, description) VALUES
 
 -- Categorías para Procesos (department_id = 5)
 INSERT INTO categories (department_id, name, description) VALUES
-(5, 'Error en Odoo', 'Módulo no carga, error 500, campo no encontrado'),
+(5, 'Error en ERP', 'Módulo no carga, error 500, campo no encontrado'),
 (5, 'Solicitud de Políticas', 'Necesito nueva política o revisión de existente'),
 (5, 'Solicitud de Proceso', 'Crear o modificar flujo de trabajo'),
 (5, 'Solicitud de Formato', 'Necesito formato Excel, PDF o Word nuevo documento'),
-(5, 'Solicitud de Modificación en Odoo', 'Cambiar campo, regla de acceso, workflow'),
-(5, 'Solicitud de Alta de Usuario en Odoo', 'Nuevo empleado necesita acceso al ERP'),
+(5, 'Solicitud de Modificación en ERP', 'Cambiar campo, regla de acceso, workflow'),
+(5, 'Solicitud de Alta de Usuario en ERP', 'Nuevo empleado necesita acceso al ERP'),
 (5, 'Actualización del Manual de Procedimientos', 'Agregar, modificar o eliminar procedimiento');
 
 -- Usuarios de ejemplo (actualiza con tu lista real luego del deploy)
@@ -222,3 +214,4 @@ SET FOREIGN_KEY_CHECKS = 1;
 -- ============================================================================
 -- FIN DEL SCRIPT DE INSTALACIÓN
 -- ============================================================================
+
