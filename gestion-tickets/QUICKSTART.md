@@ -1,4 +1,4 @@
-#  Guía de Inicio Rápido - RIDECO Ticket System
+#  Guía de Inicio Rápido -Gestion Ticket System
 
 **Bienvenido al Sistema de Gestión de Tickets**
 
@@ -10,7 +10,7 @@
 
 ```bash
 # Si tienes Git
-git clone https://github.com/tuusuario/gestion-tickets.git
+git clone https://github.com/ingenieroaxelgutierrez-art/GESTION-TICKETS.git
 
 # O descargar ZIP y extraer en:
 # c:\xampp\htdocs\gestion-tickets
@@ -85,7 +85,7 @@ views/
   └── dashboard/      ← Paneles por rol
 
 sql/
-  └── production.sql  ← TODO (base de datos completa)
+  └── production.sql  ← Base de datos completa
 
 assets/
   ├── css/            ← Estilos
@@ -171,7 +171,7 @@ Cuando estés listo para producción:
 
 ### Con HostGator:
 1. Abre SSH a tu servidor
-2. `git clone https://github.com/usuario/gestion-tickets.git`
+2. `git clone https://github.com/ingenieroaxelgutierrez-art/GESTION-TICKETS.git`
 3. Crea BD en cPanel
 4. `mysql -u user -p bd < sql/production.sql`
 5. Edita `app/config/database.php`
@@ -245,3 +245,4 @@ El sistema está 100% funcional. Ahora:
 ---
 
 *Versión: 1.0 | Última actualización: 15 de enero de 2026*
+
