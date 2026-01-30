@@ -9,7 +9,7 @@ require_once __DIR__ . '/../../app/helpers/menu.php';
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
-            <img src="/gestion-tickets/assets/img/favicon_rideco.png" alt="RIDECO">
+            <img src="/gestion-tickets/assets/favicon_rideco.png" alt="tickets">
         </div>
         <?php echo renderMenu(); ?>
     </aside>
@@ -333,4 +333,5 @@ function escapeHtml(text) {
     };
     return text.replace(/[&<>"']/g, m => map[m]);
 }
+
 </script>
