@@ -2,6 +2,8 @@
 /**
  * Modelo para Notificaciones
  */
+require_once _DIR_ . '/../core/Model.php';
+
 class Notification extends Model
 {
     protected $table = 'notifications';
@@ -136,3 +138,4 @@ class Notification extends Model
         return $stmt->fetch();
     }
 }
+
