@@ -126,7 +126,7 @@
             <div class="login-card-animated">
                 <div class="login-header">
                     <div class="login-icon">
-                        <img src="/gestion-tickets/assets/img/favicon_rideco.png" alt="Logo Rideco">
+                        <img src="/gestion-tickets/assets/favicon_rideco.png" alt="Logo">
                     </div>
                     <h2 class="login-title">Bienvenido!</h2>
                     <p class="login-subtitle">Por favor ingresa tus datos</p>
@@ -224,4 +224,5 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         }
     }, 'POST', true);
 });
+
 </script>
