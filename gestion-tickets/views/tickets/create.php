@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Crear Ticket - RIDECO';
+$pageTitle = 'Crear Ticket - TICKETS';
 include __DIR__ . '/../layouts/header.php';
 ?>
 
@@ -7,7 +7,7 @@ include __DIR__ . '/../layouts/header.php';
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="sidebar-header">
-                 <img src="/gestion-tickets/assets/img/favicon_rideco.png" alt="Logo">
+                 <img src="/gestion-tickets/assets/favicon_rideco.png" alt="Logo">
             </div>
             <ul class="sidebar-menu">
                 <li><a href="<?php echo (defined('BASE_URL') ? BASE_URL : (isset($BASE_URL)?$BASE_URL:'')) ?: '/gestion-tickets'; ?>/tickets/create" class="active"><i class="fas fa-plus"></i> Crear Ticket</a></li>
@@ -489,4 +489,5 @@ include __DIR__ . '/../layouts/header.php';
         });
     </script>
 <?php include __DIR__ . '/../layouts/footer.php'; ?>
+
 
