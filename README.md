@@ -90,7 +90,7 @@ Permite gestión completa del ciclo de vida de un ticket: creación → asignaci
 
 ```bash
 # Opción A: Clonar desde GitHub
-git clone https://github.com/tuusuario/gestion-tickets.git
+git clone https://github.com/ingenieroaxelgutierrez-art/GESTION-TICKETS.git
 cd gestion-tickets
 
 # Opción B: Descargar ZIP
@@ -186,10 +186,7 @@ gestion-tickets/
 │   └── uploads/                  # Archivos adjuntos
 │
 ├── sql/
-│   ├── production.sql            # USE THIS (TODO incluido)
-│   ├── schema.sql
-│   ├── create-notifications-table.sql
-│   └── migration-comment-attachments.sql
+│   ├── production.sql            # Data base
 │
 ├── storage/logs/                 # Logs
 │
@@ -252,7 +249,7 @@ cd public_html
 #### 3. Clonar desde GitHub
 
 ```bash
-git clone https://github.com/tuusuario/gestion-tickets.git
+git clone https://github.com/ingenieroaxelgutierrez-art/GESTION-TICKETS.git
 cd gestion-tickets
 ```
 
@@ -348,7 +345,7 @@ a2enmod rewrite
 
 ```bash
 cd /var/www
-git clone https://github.com/tuusuario/gestion-tickets.git
+git clone https://github.com/ingenieroaxelgutierrez-art/GESTION-TICKETS.git
 cd gestion-tickets
 chown -R www-data:www-data .
 ```
@@ -472,7 +469,7 @@ git commit -m "Initial commit: Sistema de Gestión de Tickets"
 
 ```bash
 # Reemplazar USER y REPO
-git remote add origin https://github.com/USER/gestion-tickets.git
+git remote add origin https://github.com/ingenieroaxelgutierrez-art/GESTION-TICKETS.git
 git branch -M main
 git push -u origin main
 ```
