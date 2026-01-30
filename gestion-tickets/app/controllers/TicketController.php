@@ -73,7 +73,7 @@ class TicketController extends Controller
                     ];
                 }
                 
-                $pageTitle = in_array($role, ['agent', 'admin']) ? 'Tickets por Atender - RIDECO' : 'Mis Tickets - RIDECO';
+                $pageTitle = in_array($role, ['agent', 'admin']) ? 'Tickets por Atender' : 'Mis Tickets';
                 $this->view('tickets/lista', [
                     'pageTitle' => $pageTitle,
                     'myTickets' => $myTickets,
@@ -83,7 +83,7 @@ class TicketController extends Controller
             } catch (Exception $e) {
                 $fallbackRole = Auth::role();
                 $this->view('tickets/lista', [
-                    'pageTitle' => 'Mis Tickets - RIDECO',
+                    'pageTitle' => 'Mis Tickets',
                     'myTickets' => [],
                     'myStats' => ['total' => 0, 'abiertos' => 0, 'resueltos' => 0],
                     'userRole' => $fallbackRole,
@@ -147,7 +147,7 @@ class TicketController extends Controller
             ]);
         } catch (Exception $e) {
             $this->view('tickets/create', [
-                'pageTitle' => 'Crear Ticket - RIDECO',
+                'pageTitle' => 'Crear Ticket',
                 'departments' => [],
                 'receptorDepts' => [],
                 'categories' => [],
@@ -219,7 +219,7 @@ class TicketController extends Controller
         }
 
         $this->view('tickets/lista', [
-            'pageTitle' => 'Detalle del Ticket - RIDECO',
+            'pageTitle' => 'Detalle del Ticket',
             'myTickets' => $myTickets,
             'myStats' => $myStats,
             'userRole' => $role,
@@ -703,4 +703,5 @@ class TicketController extends Controller
 
     $this->json(['nuevos' => (int)$nuevos, 'timestamp' => time()]);
 }
+
 }
