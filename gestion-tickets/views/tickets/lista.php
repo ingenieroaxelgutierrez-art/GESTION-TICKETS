@@ -8,7 +8,7 @@ require_once __DIR__ . '/../../app/helpers/menu.php';
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
-            <img src="/gestion-tickets/assets/img/favicon_rideco.png" alt="Logo">
+            <img src="/gestion-tickets/assets/favicon_rideco.png" alt="Logo">
         </div>
         <?php echo renderMenu(); ?>
 
@@ -937,4 +937,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 <?php endif; ?>
 </script>
+
 <?php include __DIR__ . '/../layouts/footer.php'; ?>
