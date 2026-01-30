@@ -47,7 +47,7 @@ $recentTickets = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
-            <img src="/gestion-tickets/assets/img/favicon_rideco.png" alt="RIDECO">
+            <img src="/gestion-tickets/assets/favicon_rideco.png" alt="ticket">
         </div>
         <?php echo renderMenu(); ?>
     </aside>
@@ -157,3 +157,4 @@ $recentTickets = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 <?php include __DIR__ . '/../layouts/footer.php'; ?>
+
