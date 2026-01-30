@@ -4,7 +4,7 @@
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
-            <img src="/gestion-tickets/assets/img/favicon_rideco.png" alt="RIDECO">
+            <img src="/gestion-tickets/assets/favicon_rideco.png" alt="tickets">
         </div>
         <ul class="sidebar-menu">
             <li>
@@ -229,3 +229,4 @@ function escapeHtml(text) {
 }
 </script>
 <?php include __DIR__ . '/../layouts/footer.php'; ?>
+
